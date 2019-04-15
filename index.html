@@ -126,7 +126,7 @@
             </tr>
             <tr>
                 <th scope="row">21:00-22:00</th>
-                <td>Workshop 1 (Katherine)</td>
+                <td>Workshop 1</td>
             </tr>
             <tr>
                 <th scope="row">00:00</th>
@@ -145,7 +145,7 @@
             </tr>
             <tr>
                 <th scope="row">11:00</th>
-                <td>Workshop 2 (Mike)</td>
+                <td>Workshop 2</td>
             </tr>
             <tr>
                 <th scope="row">12:00</th>
@@ -190,7 +190,7 @@
 
             <h5>5. What is the deadline for applying?</h5>
             <p style="text-align: left">
-                The deadline to apply for PsychHacks is April 30 2019, but applications will be accepted on a rolling basis.
+                The deadline to apply for PsychHacks is April 26 2019, but applications will be accepted on a rolling basis.
             </p>
             <br>
 
@@ -203,17 +203,23 @@
 
         <h1 style="font-weight: normal; margin-top: 50px; margin-bottom: 50px" id="apply">Apply</h1>
         <p style="text-align: left">
-            Please note that we can't take everyone to participate but we do consider all applications! Please keep your responses
-            short and to the point. Thanks!
+            Registration is now open!
         </p>
         <div class="card" style="text-align: left">
         <div class="card-block card-body">
             <form class="form" id="form" action="https://www.enformed.io/kejeu0i3" method="POST">
 
                 <p class="h5 mb-4">Please fill out the form below.</p>
-                <div class="md-form">
-                    <label for="form3">1. Full Name</label>
-                    <input name="name" required type="text" id="form3" class="form-control" placeholder="">
+
+                <label for="firstName">1. Name</label>
+
+                <div class="row">
+                    <div class="col">
+                        <input name="firstName" required id="firstName" type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <input name="lastName" required id="lastName" type="text" class="form-control" placeholder="Last name">
+                    </div>
                 </div>
                 <br>
                 <div class="md-form">
@@ -224,8 +230,7 @@
 
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">3. Current Level of Education</label>
-                    <select name="level of study" class="form-control" id="exampleFormControlSelect1">
-                        <option>High School</option>
+                    <select name="Level of Study" class="form-control" id="exampleFormControlSelect1">
                         <option>Bachelors</option>
                         <option>Masters</option>
                         <option>PhD</option>
@@ -235,49 +240,246 @@
 
                 <br>
 
-
-                <label for="exampleFormControlSelect1">4. Have you every attended a Hackathon before?</label>
-                <br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="HackathonPreviouslyAttendedYes" id="inlineRadio1" value="Yes">
-                    <label class="form-check-label" for="inlineRadio1">Yes</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="HackathonPreviouslyAttendedNo" id="inlineRadio2" value="No">
-                    <label class="form-check-label" for="inlineRadio2">No</label>
-                </div>
-                <br>
-                <br>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">5. Have you participated in a hackathon before?
+                <input type="hidden" name="4. What is/are your primary areas of study?" value="" />
+                <label for="socialPersonality">4. What is/are your primary areas of study?</label>
+                <div class="form-check">
+                    <input name="socialPersonality" class="form-check-input" type="checkbox" value="" id="socialPersonality">
+                    <label class="form-check-label" for="socialPersonality">
+                       Social/Personality
                     </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="WhyDoYouWantToTakePart"></textarea>
+                </div>
+                <div class="form-check">
+                    <input name="PerceptionCognitionNeuroscience" class="form-check-input" type="checkbox" value="" id="PerceptionCognitionNeuroscience">
+                    <label class="form-check-label" for="PerceptionCognitionNeuroscience">
+                        Perception/Cognition/Neuroscience
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="BrainBehaviour" class="form-check-input" type="checkbox" value="" id="BrainBehaviour">
+                    <label class="form-check-label" for="BrainBehaviour">
+                        Brain & behavior
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Development" class="form-check-input" type="checkbox" value="" id="Development">
+                    <label class="form-check-label" for="Development">
+                        Development
+                    </label>
+                </div>
+                <input style="margin-top: 10px" name="Other Research Areas" id="otherResearchArea" type="text" class="form-control col-md-4" placeholder="other">
+                <br>
+
+
+                <div class="form-group">
+                    <label for="backgroundInCS">5. What is your background in computer programming?</label>
+                    <select name="5. What is your background in computer programming?" class="form-control" id="backgroundInCS">
+                        <option>All new to me!</option>
+                        <option>I took a few courses but I haven’t used it in a while.</option>
+                        <option>I can edit and runs scripts but am not comfortable starting from scratch.</option>
+                        <option>I’m proficient in a/a few languages but don’t know much about psychology applications.</option>
+                        <option>I program my own experiments, analyses, etc.</option>
+                    </select>
                 </div>
 
                 <br>
+
+                <input type="hidden" name="6. If you have experience in programming, which languages do you write in?" value="" />
+                <label for="socialPersonality">6. If you have experience in programming, which languages do you write in?</label>
+                <div class="form-check">
+                    <input name="Python" class="form-check-input" type="checkbox" value="" id="Python">
+                    <label class="form-check-label" for="Python">
+                        Python
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Matlab" class="form-check-input" type="checkbox" value="" id="Matlab">
+                    <label class="form-check-label" for="Matlab">
+                        Matlab
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="HTML" class="form-check-input" type="checkbox" value="" id="HTML">
+                    <label class="form-check-label" for="HTML">
+                        HTML
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Java" class="form-check-input" type="checkbox" value="" id="Java">
+                    <label class="form-check-label" for="Java">
+                        Java
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Javascript" class="form-check-input" type="checkbox" value="" id="Javascript">
+                    <label class="form-check-label" for="Javascript">
+                        Javascript
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="C" class="form-check-input" type="checkbox" value="" id="C">
+                    <label class="form-check-label" for="C">
+                        C
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="C#" class="form-check-input" type="checkbox" value="" id="C#">
+                    <label class="form-check-label" for="C#">
+                        C#
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="C++" class="form-check-input" type="checkbox" value="" id="C++">
+                    <label class="form-check-label" for="C++">
+                        C++
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="SPSSSyntax" class="form-check-input" type="checkbox" value="" id="SPSSSyntax">
+                    <label class="form-check-label" for="SPSSSyntax">
+                        SPSS Syntax
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="noExperienceCoding" class="form-check-input" type="checkbox" value="" id="noExperienceCoding">
+                    <label class="form-check-label" for="noExperienceCoding">
+                        No Experience
+                    </label>
+                </div>
+                <input style="margin-top: 10px" name="Other Coding Ability"  id="otherCodingAbility" type="text" class="form-control col-md-4" placeholder="other">
+                <br>
+
+                <input type="hidden" name="7. What experiment programming software/tools have you used?" value="" />
+                <label for="socialPersonality">7. What experiment programming software/tools have you used?</label>
+                <div class="form-check">
+                    <input name="Qualtrics" class="form-check-input" type="checkbox" value="" id="Qualtrics">
+                    <label class="form-check-label" for="Qualtrics">
+                        Qualtrics
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Psychopy Builder" class="form-check-input" type="checkbox" value="" id="PsychopyBuilder">
+                    <label class="form-check-label" for="PsychopyBuilder">
+                        Psychopy Builder
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Psychopy Coder" class="form-check-input" type="checkbox" value="" id="PsychopyCoder">
+                    <label class="form-check-label" for="PsychopyCoder">
+                        Psychopy Coder
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Eprime" class="form-check-input" type="checkbox" value="" id="Eprime">
+                    <label class="form-check-label" for="Eprime">
+                        Eprime
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Inquisit" class="form-check-input" type="checkbox" value="" id="Inquisit">
+                    <label class="form-check-label" for="Inquisit">
+                        Inquisit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Presentation" class="form-check-input" type="checkbox" value="" id="Presentation">
+                    <label class="form-check-label" for="Presentation">
+                        Presentation
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="PEBL" class="form-check-input" type="checkbox" value="" id="PEBL">
+                    <label class="form-check-label" for="PEBL">
+                        PEBL
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="noExperienceCodingExperiment" class="form-check-input" type="checkbox" value="" id="noExperienceCodingExperiment">
+                    <label class="form-check-label" for="noExperienceCodingExperiment">
+                        I haven’t made a computerized experiment
+                    </label>
+                </div>
+                <input style="margin-top: 10px" name="Other Experiment Coding Experience" id="otherExperimentCodingAbility" type="text" class="form-control col-md-4" placeholder="other">
+                <br>
+
+
+                <input type="hidden" name="8. What data management/analysis tools have you used?" value="" />
+                <label for="socialPersonality">8. What data management/analysis tools have you used?</label>
+                <div class="form-check">
+                    <input name="Excel" class="form-check-input" type="checkbox" value="" id="Excel">
+                    <label class="form-check-label" for="Excel">
+                        Excel
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="SPSS" class="form-check-input" type="checkbox" value="" id="SPSS">
+                    <label class="form-check-label" for="SPSS">
+                        SPSS
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="SAS" class="form-check-input" type="checkbox" value="" id="SAS">
+                    <label class="form-check-label" for="SAS">
+                        SAS
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="R" class="form-check-input" type="checkbox" value="" id="R">
+                    <label class="form-check-label" for="R">
+                        R
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="JASP" class="form-check-input" type="checkbox" value="" id="JASP">
+                    <label class="form-check-label" for="JASP">
+                        JASP
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="MiniTab" class="form-check-input" type="checkbox" value="" id="MiniTab">
+                    <label class="form-check-label" for="MiniTab">
+                        MiniTab
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Matlab" class="form-check-input" type="checkbox" value="" id="Matlab1">
+                    <label class="form-check-label" for="Matlab1">
+                        Matlab
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="Python" class="form-check-input" type="checkbox" value="" id="Python1">
+                    <label class="form-check-label" for="Python1">
+                        Python
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input name="I have not worked with data" class="form-check-input" type="checkbox" value="" id="noExperienceData">
+                    <label class="form-check-label" for="noExperienceData">
+                        I haven’t made a computerized experiment
+                    </label>
+                </div>
+                <input style="margin-top: 10px" name="other Data knowledge" id="otherData" type="text" class="form-control col-md-4" placeholder="other">
+                <br>
+
+
                 <div class="md-form">
-                    <label for="form6">6. How did you hear about PsychHacks?</label>
+                    <label for="form6">9. How did you hear about PsychHacks?</label>
                     <input name="howDidYouHear" required type="text" id="form6" class="form-control">
                 </div>
                 <br>
 
-                <label for="exampleFormControlSelect1">7. Are you part of a team?</label>
+                <label for="exampleFormControlSelect1">10. Will you be attending <a href="http://sociology.utoronto.ca/events-2-2/university-of-toronto-social-science-methods-week/university-of-toronto-social-science-methods-week-2019/" target="_blank">social science methods week</a>?</label>
                 <br>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="HaveTeam" id="inlineRadio3" value="Yes">
-                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                    <input class="form-check-input" type="radio" name="Will you be attending methods week?" id="yesAttending" value="Yes">
+                    <label class="form-check-label" for="yesAttending">Yes</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="HaveTeam" id="inlineRadio4" value="No">
-                    <label class="form-check-label" for="inlineRadio2">No</label>
+                    <input class="form-check-input" type="radio" name="Will you be attending methods week?" id="noAttending" value="No">
+                    <label class="form-check-label" for="noAttending">No</label>
                 </div>
-                <br>
                 <br>
 
-                <div class="md-form">
-                    <label for="form8">8. If <b>yes</b>, please list your team members. Note: you must all apply separately.</label>
-                    <input name="teamMembers" required type="text" id="form8" class="form-control">
-                </div>
                 <br>
 
                 <input type="hidden" name="*redirect" value="https://psychhack2019.github.io/landing/index.html"/>
